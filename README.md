@@ -24,7 +24,7 @@ You can install the package via composer:
 composer require laravel-egypt/datalens --dev
 ```
 
-*(Note: DataLens is primarily intended for development environments. If you need it in production, ensure you properly configure access gates/middleware.)*
+_(Note: DataLens is primarily intended for development environments. If you need it in production, ensure you properly configure access gates/middleware.)_
 
 Publish the assets and configuration:
 
@@ -35,7 +35,7 @@ php artisan vendor:publish --tag="datalens-config"
 
 ## Usage
 
-Once installed, simply navigate to `/datalens` in your browser to access the dashboard.
+Once installed, simply navigate to `/dev/datalens` in your browser to access the dashboard.
 
 ```text
 http://your-app.test/datalens
@@ -56,7 +56,7 @@ return [
     |
     */
     'path' => env('DATALENS_PATH', 'datalens'),
-    
+
     /*
     |--------------------------------------------------------------------------
     | DataLens Route Middleware
@@ -73,7 +73,30 @@ return [
 
 ## Screenshots
 
-*(Placeholder for screenshots of Table Viewer, SQL Editor, and Dark Mode)*
+### Home
+<p align="center">
+    <img src="images/datalens-home.png" alt="DataLens Home" width="800">
+</p>
+
+### Table View
+<p align="center">
+    <img src="images/table-view.png" alt="Table View" width="800">
+</p>
+
+### Add Row
+<p align="center">
+    <img src="images/table-add-row.png" alt="Add Row" width="800">
+</p>
+
+### SQL Editor
+<p align="center">
+    <img src="images/sql-editor.png" alt="SQL Editor" width="800">
+</p>
+
+### Multiple Connections
+<p align="center">
+    <img src="images/different-connections.png" alt="Multiple Connections" width="800">
+</p>
 
 ## Testing
 
