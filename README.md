@@ -38,7 +38,7 @@ php artisan vendor:publish --tag="datalens-config"
 Once installed, simply navigate to `/dev/datalens` in your browser to access the dashboard.
 
 ```text
-http://your-app.test/datalens
+http://your-app.test/dev/datalens
 ```
 
 ### Configuration
@@ -74,26 +74,31 @@ return [
 ## Screenshots
 
 ### Home
+
 <p align="center">
     <img src="images/datalens-home.png" alt="DataLens Home" width="800">
 </p>
 
 ### Table View
+
 <p align="center">
     <img src="images/table-view.png" alt="Table View" width="800">
 </p>
 
 ### Add Row
+
 <p align="center">
     <img src="images/table-add-row.png" alt="Add Row" width="800">
 </p>
 
 ### SQL Editor
+
 <p align="center">
     <img src="images/sql-editor.png" alt="SQL Editor" width="800">
 </p>
 
 ### Multiple Connections
+
 <p align="center">
     <img src="images/different-connections.png" alt="Multiple Connections" width="800">
 </p>
