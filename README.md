@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="datalens-logo.svg" alt="DataLens Logo" width="400">
+</p>
+
 # DataLens
 
 DataLens is a powerful, lightweight, and beautiful database management GUI and SQL editor for Laravel applications. It provides a seamless interface to view tables, execute raw SQL queries, and manage records across multiple database connections directly within your Laravel environment.

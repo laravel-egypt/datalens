@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+    <defs>
+        <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1" />
+            <stop offset="100%" stop-color="#4F46E5" />
+        </linearGradient>
+        <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#818CF8" />
+            <stop offset="100%" stop-color="#4338CA" />
+        </linearGradient>
+        <style>
+            .title-text {
+                font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                font-size: 56px;
+                font-weight: 800;
+                letter-spacing: -1.5px;
+                fill: #1E1B4B;
+            }
+            @media (prefers-color-scheme: dark) {
+                .title-text { fill: #F8FAFC; }
+            }
+        </style>
+    </defs>
+    
+    <g transform="translate(10, 10)">
+        <path d="M20 30 L20 80 C20 100, 80 100, 80 80 L80 30" fill="url(#dbGrad)" />
+        <path d="M50 30 C20 30, 20 50, 50 50 C80 50, 80 30, 50 30 Z" fill="#C7D2FE" />
+        <path d="M50 20 C20 20, 20 40, 50 40 C80 40, 80 20, 50 20 Z" fill="#E0E7FF" opacity="0.5" />
+        
+        <circle cx="65" cy="65" r="22" fill="none" stroke="url(#lensGrad)" stroke-width="8" />
+        <line x1="80" y1="80" x2="100" y2="100" stroke="url(#lensGrad)" stroke-width="10" stroke-linecap="round" />
+        
+        <path d="M52 52 A 16 16 0 0 1 73 57" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <text x="130" y="80" class="title-text">
+        Data<tspan fill="#4F46E5">Lens</tspan>
+    </text>
+</svg>

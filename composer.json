@@ -2,6 +2,7 @@
   "name": "laravel-egypt/datalens",
   "version": "0.1.0",
   "description": "A zero-config database management studio for Laravel.",
+  "license": "MIT",
   "type": "library",
   "require": {
     "php": "^8.2",
