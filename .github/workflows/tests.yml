@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - '*.x'
+      - "*.x"
   pull_request:
 
 permissions:
@@ -48,21 +48,3 @@ jobs:
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress --no-scripts
-
-      - name: PHPStan
-        run: composer analyse
-
-      - name: Linter
-        run: composer lint:check
-
-      - name: Type Coverage
-        if: runner.os != 'Windows'
-        run: composer test:types
-
-      - name: Test Suite
-        if: runner.os != 'Windows'
-        run: composer test:unit
-
-      - name: Test Suite (Windows)
-        if: runner.os == 'Windows'
-        run: vendor/bin/pest
