@@ -48,7 +48,6 @@ jobs:
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress --no-scripts
-          composer run prepare
 
       - name: PHPStan
         run: composer analyse
