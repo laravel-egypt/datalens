@@ -21,7 +21,7 @@ DataLens is a powerful, lightweight, and beautiful database management GUI and S
 You can install the package via composer:
 
 ```bash
-composer require laravel-egypt/datalens --dev
+composer require laravel-egypt/datalens:"@dev" --dev
 ```
 
 _(Note: DataLens is primarily intended for development environments. If you need it in production, ensure you properly configure access gates/middleware.)_
